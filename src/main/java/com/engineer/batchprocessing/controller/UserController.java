@@ -38,7 +38,7 @@ public class UserController {
 
     @PostMapping("/allUsers")
     public ResponseEntity<?> getAllUsers(@RequestBody UseSearchrRequest request) {
-        List<User> users = userService.getAllUsers ( request);
+        List<User> users = userService.getAllUsers(request);
         return new ResponseEntity<> (users, HttpStatus.OK);
     }
 }
